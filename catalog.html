@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Nerds</title>
+</head>
+
+<body>
+  <header>
+    <a>
+      <img src="img/logo.svg" alt="Логотип студии Nerds" width="160" height="65">
+    </a>
+    <ul>
+      <li>
+        <a href="blank.html">Студия</a>
+      </li>
+      <li>
+        <a href="blank.html">Клиенты</a>
+      </li>
+      <li>
+        <a href="catalog.html">Магазин</a>
+      </li>
+      <li>
+        <a href="blank.html">Контакты</a>
+      </li>
+    </ul>
+    <a href="#">Корзина</a>
+    <h1>Магазин готовых шаблонов</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Фильтр товаров</h2>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость:</legend>
+
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid-group" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid-group" value="fix" id="filter-fix">
+              <label for="filter-fix">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid-group" value="fluid" id="filter-fluid">
+              <label for="filter-fluid">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="features" id="filter-features">
+              <label for="filter-features">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="bin" id="filter-bin">
+              <label for="filter-bin">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Сортировать</h2>
+      <ul>
+        <li>
+          <button type="button">По цене</button>
+        </li>
+        <li>
+          <button type="button">По типу</button>
+        </li>
+        <li>
+          <button type="button">По названию</button>
+        </li>
+        <li>
+          <button type="button">На уменьшение</button>
+        </li>
+        <li>
+          <button type="button">На увеличение</button>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Список продуктов</h2>
+      <ul>
+        <li>
+          <div></div>
+          <img src="img/product-1.jpg" width="358" height="578" alt="">
+          <div>
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </div>
+        </li>
+        <li>
+          <div></div>
+          <img src="img/product-2.jpg" width="358" height="578" alt="">
+          <div>
+            <h3>Pink</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </div>
+        </li>
+        <li>
+          <div></div>
+          <img src="img/product-3.jpg" width="358" height="578" alt="">
+          <div>
+            <h3>Borodinski</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </div>
+        </li>
+        <li>
+          <div></div>
+          <img src="img/product-4.jpg" width="358" height="578" alt="">
+          <div>
+            <h3>Mishka</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </div>
+        </li>
+        <li>
+          <div></div>
+          <img src="img/product-5.jpg" width="358" height="578" alt="">
+          <div>
+            <h3>A+</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </div>
+        </li>
+        <li>
+          <div></div>
+          <img src="img/product-6.jpg" width="358" height="578" alt="">
+          <div>
+            <h3>Кваст</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <section>
+      <h2>Давайте дружить!</h2>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+      </ul>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="email-name">Ваше имя:</label>
+        <input id="email-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email-name">Ваш email:</label>
+        <input id="email-name" type="email" name="email" placeholder="email@example.com ">
+      </p>
+      <label for="email-text">Текст письма:</label><br>
+      <textarea name="text" id="email-text" cols="30" rows="10">В свободной форме</textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
+
+</body>
+
+</html>
