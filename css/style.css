@@ -31,7 +31,7 @@
 
 /* Global */
 
-.page-body {
+body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
@@ -41,11 +41,6 @@
   font-weight: 400;
   color: var(--basic-gray);
   background-color: var(--basic-white);
-
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: flex-start;
 }
 
 a {
@@ -62,6 +57,56 @@ img {
 
 .page {
   height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
+}
+
+/* Grid for pages */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .page-title {
+  grid-column: 1 / -1;
+  margin-bottom: 55px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .filter {
+  grid-column: 1 / 2;
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
+
+}
+
+.page-catalog .catalog {
+  grid-column: 2 / 3;
+  margin-left: 140px;
+  outline: 5px solid rgba(229, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .catalog-sort {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  outline: 5px solid rgba(0, 255, 119, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .catalog-list {
+  outline: 5px solid rgba(55, 0, 255, 0.7);
+  outline-offset: -5px;
 }
 
 /* Main header */
@@ -421,7 +466,15 @@ img {
 
 /* Inner page */
 
+.inner-page .main-header {
+  margin-bottom: 0;
+}
+
 .page-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 78px;
+  padding-bottom: 108px;
   color: var(--basic-black);
   font-size: 55px;
   line-height: 55px;
@@ -431,6 +484,10 @@ img {
 }
 
 /* Filters */
+
+.filters {
+
+}
 
 .filter legend {
   color: var(--basic-black);
@@ -452,9 +509,21 @@ img {
   opacity: 0.3;
 }
 
+/* Sort */
+
+.sort {
+
+}
+
 /* Catalog */
 
+.catalog {
+
+}
+
 .catalog-list {
+  margin:  0;
+  padding: 0;
   list-style: none;
 }
 
@@ -519,7 +588,7 @@ img {
   text-align: center;
 }
 
-.footer-social ul {;
+.footer-social ul {
   list-style: none;
 }
 
