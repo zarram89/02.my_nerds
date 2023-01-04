@@ -1,0 +1,348 @@
+/* Variables */
+
+:root {
+  --basic-black: rgba(0, 0, 0, 1);
+  --active-black: rgba(0, 0, 0, 0.3);
+  --basic-white: rgba(255, 255, 255, 1);
+  --active-white: rgba(255, 255, 255, 0.3);
+  --basic-grey: rgba(238, 238, 238, 1);
+  --grey-shadow: rgba(0, 1, 1, 0.1);
+  --grey-extra-dark: rgba(40, 49, 54, 1);
+  --locked-grey: rgba(40, 49, 54, 0.3);
+  --grey-dark: rgba(68, 68, 68, 1);
+  --grey-dark-hover: rgba(68, 68, 68, 0.5);
+  --grey-dark-catalog: rgba(77, 77, 77, 1);
+  --grey-contacts: rgba(102, 102, 102, 1);
+  --grey-social: rgba(225, 225, 225, 1);
+  --focus-grey: rgba(223, 223, 223, 1);
+  --active-grey: rgba(213, 213, 213, 1);
+  --current-grey: rgba(219, 219, 219, 1);
+  --input-grey: rgba(215, 220, 222, 1);
+  --input-hover: rgba(180, 185, 187, 1);
+  --basic-red: rgba(251, 86, 90, 1);
+  --focus-red: rgba(231, 66, 70, 1);
+  --active-red: rgba(215, 55, 59, 1);
+  --basic-green: rgba(0, 202, 116, 1);
+  --focus-green: rgba(0, 188, 108, 1);
+  --active-green: rgba(0, 170, 98, 1);
+  --basic-yellow: rgba(239, 200, 73, 1);
+  --focus-yellow: rgba(234, 181, 52, 1);
+  --active-yellow: rgba(229, 167, 34, 1);
+}
+
+/* Global */
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", "Helvetica Neue", "Nimbus Sans", "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-extra-dark);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Buttons */
+
+.button {
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--focus-red);
+}
+
+.button:active {
+  color: var(--active-white);
+  box-shadow: inset 0px 3px 0px var(--grey-shadow);
+  background-color: var(--active-red);
+}
+
+/* Header */
+
+.main-header {
+  background-color: var(--basic-grey);
+}
+
+/* Main navigation */
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus,
+.user-navigation a[href]:hover,
+.user-navigation a[href]:focus {
+  color: var(--basic-red);
+}
+
+.site-navigation a[href]:active,
+.user-navigation a[href]:active {
+  color: var(--active-black);
+}
+
+.site-navigation-current a:not([href]),
+.user-navigation-current a:not([href]) {
+  color: var(--basic-black);
+}
+
+/* Slider */
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item h3 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.slider-item p {
+  color: var(--grey-extra-dark);
+}
+
+/* End of Header */
+
+/* Main-Index */
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.button-green {
+  background-color: var(--basic-green);
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--focus-green);
+}
+
+.button-green:active {
+  background-color: var(--active-green);
+}
+
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--focus-yellow);
+}
+
+.button-yellow:active {
+  background-color: var(--active-yellow);
+}
+
+/* About-us */
+
+.about-us-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about-us-list-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-us-list {
+  list-style: none;
+}
+
+.about-us-table caption {
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.about-us-table td {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.about-us-table sup {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--basic-black);
+}
+
+.about-us-table th {
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* Partners */
+
+.partners-list {
+  list-style: none;
+}
+
+/* End of Main-Index */
+
+/* Footer */
+/* Contacts */
+
+.contacts-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.contacts-address,
+.contacts-phone {
+  line-height: 18px;
+  color: var(--grey-contacts);
+}
+
+/* Social */
+
+.social-list {
+  list-style: none;
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.social-text {
+  line-height: 22px;
+  color: var(--grey-dark);
+}
+
+/* End of Footer */
+
+/* Modal */
+
+.modal {
+  color: var(--basic-black);
+}
+
+.modal h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.modal-item label {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.modal-item input,
+.modal-item textarea {
+  border: 2px solid var(--input-grey);
+  border-radius: 3px;
+}
+
+.modal-item input::placeholder,
+.modal-item textarea::placeholder {
+  color: var(--grey-dark-hover);
+  opacity: 1;
+}
+
+/* Hover */
+
+.modal-item input:hover,
+.modal-item textarea:hover {
+  border: 2px solid var(--input-hover);
+  border-radius: 3px;
+}
+
+.modal-item input:hover::placeholder,
+.modal-item textarea:hover::placeholder {
+  color: var(--grey-dark-hover);
+  opacity: 1;
+}
+
+/* Focus */
+
+.modal-item input:focus,
+.modal-item textarea:focus {
+  outline: none;
+  border: 2px solid var(--basic-black);
+  border-radius: 3px;
+  color: var(--grey-dark);
+}
+
+.modal-item input:focus::placeholder,
+.modal-item textarea:focus::placeholder {
+  color: transparent;
+  opacity: 1;
+}
+
+/* Invalid */
+
+.modal-item input:invalid {
+  color: var(--focus-red);
+
+  border-color: var(--focus-red);
+}
+
+/* End of Modal */
